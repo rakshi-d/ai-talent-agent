@@ -1,0 +1,23 @@
+[
+    {
+      "name": "Rahul",
+      "skills": ["Python", "Machine Learning", "SQL"],
+      "experience": 3,
+      "location": "Chennai",
+      "status": "actively looking"
+    },
+    {
+      "name": "Priya",
+      "skills": ["Java", "Spring"],
+      "experience": 2,
+      "location": "Bangalore",
+      "status": "not looking"
+    },
+    {
+      "name": "Arjun",
+      "skills": ["Python", "Deep Learning"],
+      "experience": 4,
+      "location": "Chennai",
+      "status": "open"
+    }
+  ]
