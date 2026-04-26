@@ -28,6 +28,9 @@ def process():
     for c in candidates:
         match, explanation = calculate_match_score(c, jd)
         
+        if match < 50:
+            continue
+        
         chat_data = simulate_chat(c)
         interest = chat_data["interest_score"]
         response = chat_data["response"]
