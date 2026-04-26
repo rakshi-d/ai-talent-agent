@@ -1,0 +1,7 @@
+Architecture Description
+
+The system follows a client-server architecture.
+The recruiter interacts with a frontend interface where a job description is provided. This input is sent to the Flask backend through an API request.
+The backend processes the job description using multiple modules. The JD parser extracts key requirements such as skills, experience, and location. The candidate matcher compares these requirements with stored candidate profiles.
+A simulated chat module determines the interest level of each candidate. Based on this, a scoring engine calculates both match score and interest score, which are combined to generate a final ranking.
+The results are then sent back to the frontend and displayed in a structured forma
