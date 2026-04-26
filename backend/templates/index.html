@@ -57,7 +57,7 @@
 async function sendJD() {
     let jd = document.getElementById("jd").value;
 
-    let response = await fetch("http://127.0.0.1:5000/process", {
+    let response = await fetch("/process", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
