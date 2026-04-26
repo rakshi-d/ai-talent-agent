@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import json
 from collections import OrderedDict
 from parser import parse_jd
@@ -15,7 +15,7 @@ with open("data.json") as f:
 # ✅ HOME ROUTE (for browser)
 @app.route("/")
 def home():
-    return "AI Talent Agent is running 🚀"
+    return render_template("index.html")
 
 # ✅ THIS IS /process ROUTE (ADD HERE)
 @app.route("/process", methods=["POST"])
