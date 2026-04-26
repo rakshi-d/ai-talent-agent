@@ -70,6 +70,12 @@ async function sendJD() {
     let tableBody = document.querySelector("#resultsTable tbody");
     tableBody.innerHTML = "";
 
+    if (data.length === 0) {
+        document.querySelector("#resultsTable tbody").innerHTML = "<tr><td colspan='6'>No suitable candidates found</td></tr>";
+        return;
+    }
+
+data.forEach(candidate => {
     data.forEach(candidate => {
         let row = `<tr>
             <td>${candidate.name}</td>
